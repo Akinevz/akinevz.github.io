@@ -1,6 +1,13 @@
-
 /* want to start off with a few niceties */
 body {
 	margin: 5em;
 	background-color: #eee;
+}
+
+body.hasFlex {
+	display: flex;
+}
+
+body.hasColumns {
+	flex-direction: row;
 }
