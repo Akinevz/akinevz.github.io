@@ -11,3 +11,8 @@ body.hasFlex {
 body.hasColumns {
 	flex-direction: row;
 }
+
+section.padx {
+	padding-left: 5em;
+	padding-right: 5em;
+}
