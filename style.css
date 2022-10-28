@@ -12,6 +12,11 @@ body.hasColumns {
 	flex-direction: row;
 }
 
+body.hasFade{
+	transition-property: opacity;
+	transition-duration: 200ms;
+}
+
 section.padx {
 	padding-left: 5em;
 	padding-right: 5em;
