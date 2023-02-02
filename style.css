@@ -21,3 +21,14 @@ section.padx {
 	padding-left: 5em;
 	padding-right: 5em;
 }
+body>section{
+	padding-right: 5em;
+}
+section>div{
+	padding-top: 2em;
+}
+
+@media screen and (max-width:700px) {
+  .hasFlex { flex-wrap: wrap;  }
+  /* .hasFlex:first-child { flex-basis: 100%; } */
+}
