@@ -4,43 +4,33 @@ body {
 	background-color: #eee;
 }
 
-body.hasFlex {
+.hasFlex {
 	display: flex;
 }
 
-body.hasColumns {
+.hasColumns {
 	flex-direction: row;
 }
 
-body.hasFade {
-	transition-property: opacity;
-	transition-duration: 200ms;
-}
-
-section.padx {
-	padding-left: 5em;
-	padding-right: 5em;
-}
-
-body>section {
+.hasFlex>section {
 	padding-right: 5em;
 }
 
 section>div {
-	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:750px) {
 	.hasFlex {
 		flex-wrap: wrap;
 	}
 
-	.hasFlex>section {
+	/* .hasFlex>section {
 		display: flex;
-		width: 100vw;
 		flex-direction: column;
-	}
-	.hasFlex>section>section{
+	} */
+
+	.hasFlex>section>section {
 		align-self: center;
 	}
 
