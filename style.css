@@ -12,7 +12,7 @@ body.hasColumns {
 	flex-direction: row;
 }
 
-body.hasFade{
+body.hasFade {
 	transition-property: opacity;
 	transition-duration: 200ms;
 }
@@ -21,14 +21,32 @@ section.padx {
 	padding-left: 5em;
 	padding-right: 5em;
 }
-body>section{
+
+body>section {
 	padding-right: 5em;
 }
-section>div{
+
+section>div {
 	padding-top: 2em;
 }
 
-@media screen and (max-width:700px) {
-  .hasFlex { flex-wrap: wrap;  }
-  /* .hasFlex:first-child { flex-basis: 100%; } */
+@media screen and (max-width:1200px) {
+	.hasFlex {
+		flex-wrap: wrap;
+	}
+
+	.hasFlex>section {
+		display: flex;
+		width: 100vw;
+		flex-direction: column;
+	}
+	.hasFlex>section>section{
+		align-self: center;
+	}
+
+	.hasFlex {
+		flex-direction: column;
+	}
+
+	/* .hasFlex:first-child { flex-basis: 100%; } */
 }
